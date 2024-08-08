@@ -1,0 +1,12 @@
+// creating an object in typescript const person :{ name:string; age:number;
+isStudent:boolean; address:{city:string; country:string} }= { name: 'praveen',
+age: 26, isStudent: false, address:{ city:"pune", country:"india" } } //
+accressing the object data using dot method console.log(person.address.country);
+// updating object properties person.address.country = "United States"
+console.log(person.address.country); // type aliases //when we want to create
+more person with same properties type Person = { name:string; age:number;
+isstudent:boolean; class?:string; // class is optional parameter address:
+{city:string; country:string} } const person1:Person = { name: 'praveen', age:
+26, isStudent: false, address:{ city:"pune", country:"india" } } const
+person2:Person = { name: 'kumar', age: 21, isStudent: true, address:{
+city:"noida", country:"india" } }
