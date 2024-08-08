@@ -1,0 +1,66 @@
+// array in typescript come with built-in methods that allow you to perform common operations.
+
+const fruits: string[] =  ["apple","banana","orange","mango"];
+
+// adding element to an array using push:
+
+const newupdatedfruits = fruits.push("kiwi");
+console.log(newupdatedfruits); // it tells the updated length in an array
+
+// removing elements from an arrray using pop:
+
+const lastdata = fruits.pop();
+console.log(lastdata); //it print the last data name
+
+// iteration over elements: using 
+
+// for loop 
+
+for(let i=0;i<fruits.length;i++)
+    {
+        console.log(fruits[i]);
+    }
+
+    // using for...of loop 
+
+    for(const fruit of fruits){
+        console.log(fruit);
+    }
+
+    // using for each loop 
+
+    fruits.forEach((curval:string)=> console.log(curval))
+
+
+
+
+
+    //                                       map and filter  method in javascript
+
+
+const numbers: number[] = [1,2,3,4,5];
+
+// map method  -> double each number, converting numbers to strings
+
+const doubledata:number[] = numbers.map((curval:number)=> curval*2);
+console.log(doubledata);
+
+
+// converting number to string in arrray
+
+const numberTostring:string[] = numbers.map((curElement:number)=>
+curElement.toString())
+
+console.log(numberTostring);
+
+
+// filter method -> filtering even numbers,  filtering numbers greater than 3
+
+const eventNumbers = numbers.filter((curelement:number)=> curelement%2==0)
+console.log(eventNumbers);
+
+
+// filter numbers greater than 3
+const numbergreaterthenthree = numbers.filter((curelem)=>
+curelem>3)
+console.log(numbergreaterthenthree);
